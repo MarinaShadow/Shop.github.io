@@ -1,0 +1,454 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" type="image/png" href="images/xiaomi_logo.png">
+		<meta name="keywords" content="Xiaomi, телефоны, плааншеты, ноутбуки, фитнес браслеты, Smart devices.">
+		<meta name="discription" content="Только у нас Вы можете купить смартфон Xiaomi по разумной цене. Быстрая доставка и качественное обслуживание гарантировано!">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Xiaomi</title>
+		<script src="jquery-3.3.1.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<!-------------------------------Первый блок вверхние ссылки-------------------->
+			<div class="menuLinks">
+				<a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> <span class="textHide">Магазины</span></a>
+				<a href="#"><i class="fa fa-truck" aria-hidden="true"></i> <span class="textHide">Доставка и оплата</span></a>
+				<a href="#"><i class="fa fa-handshake-o" aria-hidden="true"></i> <span class="textHide">Гарантия</span></a>
+				<a href="#"><i class="fa fa-address-card-o" aria-hidden="true"></i> <span class="textHide">Контакты</span></a>
+			<a href="#" class="registr"><i class="fa fa-user-circle"></i> <span class="textHide">Вход/Регистрация</span></a>
+			</div>
+			
+			<!-------------------------------Вход/окно появляется при клике-------------------->
+			
+			<div id="entryMe">			
+				<form name="formaEntry">
+					<button class="close" type="button" name="close"><i class="fa fa-window-close" aria-hidden="true"></i></button>
+					<div id="choice">
+						<p class="choiceOne">Вход</p>
+						<p>/</p>
+						<p class="choiceTwo">Регистрация</p>
+					</div>
+					<input class="emailEntry" type="email" name="myMail" placeholder="&#9993; Введите Ваш e-mail*">
+					<p class="secretEmailEntry">Проверьте правильность ввода согласно примера.<br>Пример: xiomi@gmail.com</p>
+					<input class="passEntry" type="password" name="pasNumb" placeholder="Введите пароль*">
+					<p class="secretPassEntry">Проверьте правильность ввода.</p>
+					<input class="myEntry" type="button" name="send" value="Войти">
+					<p class="question">Забыли пароль?</p>
+				</form>	
+				
+			</div>
+			<div id="blackFon"></div>
+			<!-------------------------------end Вход--------------------> 
+			
+			<!-------------------------------Регистрация/окно появляется при клике-------------------->
+			<div id="registerMe">			
+				<form name="formaRegister">
+					<button class="close" type="button" name="close"><i class="fa fa-window-close" aria-hidden="true"></i></button>
+					<div id="choice">
+						<p class="choiceOneR">Вход</p>
+						<p>/</p>
+						<p class="choiceTwoR">Регистрация</p>
+					</div>
+					
+					<input class="nameReg" type="text" name="myName" placeholder="Ваше имя*">
+					<p class="secretNameReg">Проверьте правильность ввода. Имя должно состоять только из букв.</p>
+					
+					<input class="emailReg" type="email" name="myMailReg" placeholder="&#9993; Введите Ваш e-mail*">
+					<p class="secretEmailReg">Проверьте правильность ввода согласно примера.<br>Пример: xiomi@gmail.com</p>
+					
+					
+					<input class="passReg" type="password" name="pasNumbReg" placeholder="Введите пароль*">
+					<p class="secretPassReg">Проверьте правильность ввода. Пароль должен содержаать не менее 8 символов.</p>
+					
+					<input class="passRegTwo" type="password" name="pasNumb" placeholder="Повторите пароль*">
+					<p class="secretPassRegTwo">Пароли не совпадаают.</p>
+					
+					<input class="myRegister" type="button" name="sendReg" value="Зарегестрироваться">
+				</form>	
+				
+			</div>
+			<div id="blackFon"></div>
+			<!-------------------------------end Регистрция--------------------> 
+			
+			
+			<div class="secondLine">
+			<!-------------------------------Контакты--------------------> 
+				<div class="contact">
+					<p class="phone">(044)500-80-00</p>
+					<p class="phone">(097)900-99-30</p>
+					<p class="worktime">Пн-Сб с 09:00 до 21:00</p>
+				</div>
+			<!-------------------------------Заказать обратный звонок-------------------->	
+				<div class="backCall">
+					<img class="imPhone"src="images/im-phone.gif" alt="">
+					<p class="textPhone">Обратный звонок</p>
+				</div>
+				
+			<!-------------------------------Корзина-------------------->	
+				
+				<div class="order">
+					<i id="iconOrder" class="fa fa-shopping-basket" aria-hidden="true"></i>
+				</div>
+			<!-------------------------------Поле поиска по сайту-------------------->	
+			
+				<div class="blockSearch">
+					<form>
+						<input class="poleSearch" type="search" placeholder="Поиск товара">
+						<button class="inpSearch" type="submit"><i id="iconSearch" class="fa fa-search" aria-hidden="true"></i></button>
+					</form>
+				</div>
+				
+				<div class="blockLogo">
+					<p class="textLogo">Xiao</p>
+					<img class="imgLogo"src="images/xiaomi_logo.png" alt="">
+				</div>
+			</div>	
+			
+			<!-------------------------------Заказать звонок/ появляется при клике-------------------->
+			<div id="callMe">			
+				<form name="formaCall">
+					<button class="close" type="button" name="close"><i class="fa fa-window-close" aria-hidden="true"></i></button>
+					<p class="callText">Заказать обратный звонок</p>
+					<input class="nameCall" type="text" name="myName" placeholder="Ваше имя">
+					<p class="secretNameCall">Проверьте правильность ввода. Имя должно состоять только из букв.</p>
+					<input class="numbCall" type="tel" name="telNumb" placeholder="Контактный телефон">
+					<p class="secretNumbCall">Проверьте правильность ввода.</p>
+					<input class="orderCallMe" type="button" name="send" value="Заказать звонок">
+				</form>	
+				
+			</div>
+			<div id="blackFon"></div>
+			<!-------------------------------end Заказать звонок--------------------> 
+			
+			<!-------------------------------Главное меню------------------------------>
+			<div>
+				<ul id="topMenu">
+					<li><a href="#"><img class="menuIcon" src="images/phone.png" alt="">
+						<span class="someText"><i class="fa fa-mobile" aria-hidden="true"></i> 
+						Телефоны</span> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+						<ul>
+							<li><a href="#">Телефоны</a></li>
+							<li><a href="#">Powerbank</a></li>
+							<li><a href="#">Защитные стекла</a></li>
+							<li><a href="#">Чехлы бамперы</a></li>
+							<li><a href="#">Чехлы книжки</a></li>
+						</ul>
+					</li>
+					<li><a href="#"><img class="menuIcon" src="images/lep-top.png" alt="">
+						<span class="someText"><i class="fal fa-laptop"></i> 
+						Ноутбуки и планшеты</span> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+						<ul>
+							<li><a href="#">Ноутбуки</a></li>
+							<li><a href="#">Планшеты</a></li>
+							<li><a href="#">Аксесуары</a></li>
+						</ul>
+					</li>
+					<li><a href="#"><img class="menuIcon" src="images/clock.png" alt="">
+						<span class="someText">Фитнес браслеты</span> 
+						<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+						<ul>
+							<li><a href="#">Фитнес браслеты</a></li>
+							<li><a href="#">Сменные ремешки</a></li>
+							<li><a href="#">Кулоны</a></li>
+						</ul>
+					</li>
+					<li><a href="#"><img class="menuIcon" src="images/tv.png" alt="">
+						<span class="someText"><i class="fa fa-television" aria-hidden="true"></i> 
+						Телевизоры</span> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+						<ul>
+							<li><a href="#">Телевизоры</a></li>
+							<li><a href="#">TV-приставки</a></li>
+						</ul>
+					</li>
+					<li><a href="#"><img class="menuIcon" src="images/smart.png" alt="">
+						<span class="someText">Smart devices</span> 
+						<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+						<ul>
+							<li><a href="#">Весы</a></li>
+							<li><a href="#">Пылесосы</a></li>
+							<li><a href="#">Wi-Fi уселители</a></li>
+						</ul>
+						</li>
+				</ul>
+			</div>
+			<!-----------------------------end Главное меню------------------------------>
+			<!----------------------Sliders---------------------------->
+			<div id="mySl">
+				<div class="slideShow">
+					<div class="mySlides fade">
+						<a href="#"><img src="images/sl-1.jpg" alt=""></a>
+					</div>
+					
+					<div class="mySlides fade">
+						<a href="#"><img src="images/sl-2.jpg" alt=""></a>
+					</div>
+					
+					<div class="mySlides fade">
+						<a href="#"><img src="images/sl-3.jpg" alt=""></a>
+					</div>
+					<div class="mySlides fade">
+						<a href="#"><img src="images/sl-4.jpg" alt=""></a>
+					</div>
+					
+					<div class="oneDot">
+						<span class="dot" onclick="currentSlide(1)"></span>
+						<span class="dot" onclick="currentSlide(2)"></span>
+						<span class="dot" onclick="currentSlide(3)"></span>
+						<span class="dot" onclick="currentSlide(4)"></span>
+					</div>	
+					
+				</div>
+			</div>
+			
+			<!---------------------------Content-NEW----------------------->
+			
+			<div class="newDevices">
+				<h2 class="textNew">Горячие <span class="textNew2">новинки</span></h2>
+				<a class="seeAll" href="#">смотреть все <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+				<div class="allProduct">
+				<div class="prod1">
+					<div class="im">
+						<img src="images/nout.jpg" alt="">
+					</div>
+					<a class="diskrip" href="#">Ноутбук Mi Notebook Air 12 M3 4Gb 128G (JYU4014CN)</a>
+					<div class="buyBox">
+						<div class="priceBox">
+							<span class="price">16 599</span> <span class="ua">грн.</span>
+						</div>
+						<form>
+							<button class="buy" type="button">Купить</button>
+						</form>
+					</div>
+					<a class="coment" href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> оставить отзыв</a>
+				</div>
+				
+				<div class="prod2">
+					<div class="im">
+						<img src="images/kamera.jpg" alt="">
+					</div>
+					<a class="diskrip" href="#">Экшн-камера Xiaomi Mi Action Camera 4K</a>
+					<div class="buyBox">
+						<div class="priceBox">
+							<span class="price">4 199</span> <span class="ua">грн.</span>
+						</div>
+						<form>
+							<button class="buy" type="button">Купить</button>
+						</form>
+					</div>
+					<a class="coment" href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> оставить отзыв</a>
+				</div>
+				
+				<div class="prod3">
+					<div class="im">
+						<img src="images/mi_5.jpg" alt="">
+					</div>
+					<a class="diskrip" href="#">Смартфон Xiaomi Redmi 5 3/32 Black</a>
+					<div class="buyBox">
+						<div class="priceBox">
+							<span class="price">4 599</span> <span class="ua">грн.</span>
+						</div>
+						<form>
+							<button class="buy" type="button">Купить</button>
+						</form>
+					</div>
+					<a class="coment" href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> оставить отзыв</a>
+				</div>
+				
+				<div class="prod4">
+					<div class="im">
+						<img src="images/mipad_3.jpg" alt="">
+					</div>
+					<a class="diskrip" href="#">Планшет Xiaomi Mi Pad 3 9.7" 256Gb Wi-Fi Silver</a>
+					<div class="buyBox">
+						<div class="priceBox">
+							<span class="price">7 699</span> <span class="ua">грн.</span>
+						</div>
+						<form>
+							<button class="buy" type="button">Купить</button>
+						</form>
+					</div>
+					<a class="coment" href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> оставить отзыв</a>
+				</div>
+				
+				</div>
+			</div>
+		
+		<!--------------------------------------Content-TOP----------------------->
+		
+			<div class="topDevices">
+				<h2 class="textTop"><span class="textTop2">TOP</span> продаж</h2>
+				<a class="seeAll" href="#">смотреть все <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+				<div class="allProduct">
+				
+				<div class="prod3">
+					<div class="im">
+						<img src="images/mi_5.jpg" alt="">
+					</div>
+					<a class="diskrip" href="#">Смартфон Xiaomi Redmi 5 3/32 Black</a>
+					<div class="buyBox">
+						<div class="priceBox">
+							<span class="price">4 599</span> <span class="ua">грн.</span>
+						</div>
+						<form>
+							<button class="buy" type="button">Купить</button>
+						</form>
+					</div>
+					<span  class="star">&#9733;&#9733;&#9733;&#9733;&#9733; </span>
+					<a class="coment" href="#">15 отзывов</a>
+				</div>
+				
+				<div class="prod1">
+					<div class="im">
+						<img src="images/nout.jpg" alt="">
+					</div>
+					<a class="diskrip" href="#">Ноутбук Mi Notebook Air 12 M3 4Gb 128G (JYU4014CN)</a>
+					<div class="buyBox">
+						<div class="priceBox">
+							<span class="price">16 599</span> <span class="ua">грн.</span>
+						</div>
+						<form>
+							<button class="buy" type="button">Купить</button>
+						</form>
+					</div>
+					<span  class="star">&#9733;&#9733;&#9733;&#9733;&#9733; </span>
+					<a class="coment" href="#">12 отзывов</a>
+				</div>
+				
+				<div class="prod4">
+					<div class="im">
+						<img src="images/mipad_3.jpg" alt="">
+					</div>
+					<a class="diskrip" href="#">Планшет Xiaomi Mi Pad 3 9.7" 256Gb Wi-Fi Silver</a>
+					<div class="buyBox">
+						<div class="priceBox">
+							<span class="price">7 699</span> <span class="ua">грн.</span>
+						</div>
+						<form>
+							<button class="buy" type="button">Купить</button>
+						</form>
+					</div>
+					<span  class="star">&#9733;&#9733;&#9733;&#9733;&#9733; </span>
+					<a class="coment" href="#">9 отзывов</a>
+				</div>
+				
+				<div class="prod2">
+					<div class="im">
+						<img src="images/kamera.jpg" alt="">
+					</div>
+					<a class="diskrip" href="#">Экшн-камера Xiaomi Mi Action Camera 4K</a>
+					<div class="buyBox">
+						<div class="priceBox">
+							<span class="price">4 199</span> <span class="ua">грн.</span>
+						</div>
+						<form>
+							<button class="buy" type="button">Купить</button>
+						</form>
+					</div>
+					<span  class="star">&#9733;&#9733;&#9733;&#9733;&#9733; </span>
+					<a class="coment" href="#">7 отзывов</a>
+				</div>
+				
+				</div>
+			</div>
+			 
+		<!-----------------------------------Обзоры/Статьи----------------------->
+		
+			<div class="videoArticles">
+				<div class="blockVideo">
+					<h2 class="textVideo">Видео обзоры <i class="fa fa-video-camera" aria-hidden="true"></i></h2>
+					<a class="seeAll" href="#">смотреть все видео <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+					<div class="centerVideo">
+					<iframe src="https://www.youtube.com/embed/-W1cZdGTb1w" frameborder="0" showinfo="0" gesture="media" allowfullscreen=""></iframe>
+					</div>
+				</div>
+				
+				<div class="blockArticles">
+					<h2 class="textVideo">Статьи <i class="fa fa-pencil-square" aria-hidden="true"></i></h2>
+					<a class="seeAll" href="#">читать все статьи <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+					<div class="articles">
+						<div class="article1">
+							<img src="images/xiaomiwifi2.png" alt="">
+							<a href="#">Для чего нужен усилитель сигнала Wi-Fi и какую модель лучше выбрать для дома</a>
+						</div>
+						
+						<div class="article1">
+							<img src="images/Miui-9.jpg" alt="">
+							<a href="#">Обновления MIUI на Xiaomi. Как обновлять.Как отключить обновления.</a>
+						</div>
+						
+						<div class="article1">
+							<img src="images/Xiaomi-Mi.jpg" alt="">
+							<a href="#">Как сделать бэкап на Xiaomi для создания резервной копии</a>
+						</div>
+					
+					</div>
+				</div>
+			</div>
+			
+		<!----------------------------------Footer------------------------------->	
+		
+			<div class="end">
+				<div class="block1" id="adapt">
+				<p class="endText">Компания</p>
+					<ul>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Сеть магазинов</a></li>
+						<li><a href="#">Партнерам</a></li>
+					</ul>
+				</div>	
+				
+				<div class="block1">
+				<p class="endText">С нами выгодно</p>
+					<ul>
+						<li><a href="#">Оплата и доставка</a></li>
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">Подарочные сертификаты</a></li>
+						<li><a href="#">Обмен и возврат</a></li>
+					</ul>				
+				</div>
+				<div class="block1">
+				<p class="endText">Будьте в курсе всех новинок!</p>
+					<ul>
+						<form>
+						<li>
+							<input id="email" class="inp1" type="email" placeholder="&#9993; Введите Ваш e-mail">
+						</li>
+						<li id="infoEm">Проверьте правильность ввода согласно примера.<br> Пример: xiomi@gmail.com</li>
+						<li>
+							<button class="inp2" type="button">Подписаться</button>
+						</li>
+						</form>
+					</ul>				
+				</div>
+				
+				<div class="block1">
+				<p class="endText">Мы принимаем:</p>
+					<ul>
+						<li>
+							<i id="masterCard" class="fa fa-cc-mastercard" aria-hidden="true"></i>
+							<i id="visa" class="fa fa-cc-visa" aria-hidden="true"></i>
+						</li>
+						<li></li>
+						<p class="endText">Присоеденяйтесь к нам</p>
+						<li>
+							<a href="#"><i id="facebook" class="fa fa-facebook-square" aria-hidden="true"></i></a>
+							<a href="#"><i id="googlePlus" class="fa fa-google-plus-square" aria-hidden="true"></i></a>
+							<a href="#"><i id="twitter" class="fa fa-twitter-square" aria-hidden="true"></i></a>
+							<a href="#"><i id="youtube" class="fa fa-youtube-square" aria-hidden="true"></i></a>
+						</li>
+					</ul>				
+				</div>
+			</div>
+			
+			
+		</div>
+			
+	<script src="shopScript.js"></script>
+	</body>
+</html>
+	
